@@ -2,9 +2,9 @@
 
 def call() {
     echo "building the application..."
-    sh'pwd'
-    sh'ls'    
-    sh'mvn clean package'
+    sh 'pwd'
+    sh 'ls'    
+    sh 'mvn clean package'
 
     
 }
