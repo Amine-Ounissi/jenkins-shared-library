@@ -8,7 +8,7 @@ def call() {
     sh 'whereis java'
     sh 'whereis maven'
     sh 'echo $JAVA_HOME'
-    sh 'mvn clean package'
+    sh 'mvn clean install'
 
     
 }
