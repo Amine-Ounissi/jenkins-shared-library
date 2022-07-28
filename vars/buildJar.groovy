@@ -3,7 +3,8 @@
 def call() {
     echo "building the application..."
     sh 'pwd'
-    sh 'ls'  
+    sh 'ls'
+    sh 'java -version'
     sh 'whereis java'
     sh 'whereis maven'
     sh 'echo $JAVA_HOME'
