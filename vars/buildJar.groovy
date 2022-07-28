@@ -4,7 +4,7 @@ def call() {
     echo "building the application..."
     sh 'pwd'
     sh 'ls'  
-    sh 'echo $JAVA_HOME'
+    sh 'whereis java'
     sh 'mvn clean package'
 
     
