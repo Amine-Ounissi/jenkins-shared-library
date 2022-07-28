@@ -10,7 +10,8 @@ def call() {
     sh 'whereis maven'
     sh 'echo $JAVA_HOME'
     sh 'echo $MAVEN_HOME'
-    sh 'mvn clean install'
+    sh 'mvn package -Pdocker-image,local-client'
+
 
     
 }
