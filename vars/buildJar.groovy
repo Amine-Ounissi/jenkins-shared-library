@@ -5,6 +5,7 @@ def call() {
     sh 'pwd'
     sh 'ls'  
     sh 'whereis java'
+    sh 'whereis maven'
     sh 'echo $JAVA_HOME'
     sh 'mvn clean package'
 
