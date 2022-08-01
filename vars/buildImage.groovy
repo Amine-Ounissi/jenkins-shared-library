@@ -5,6 +5,6 @@ def call() {
     withCredentials([usernamePassword(credentialsId: 'nexus-docker-repo', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
         sh 'docker build -t 20.225.64.98:8083/my-job:amine-registry .'
         sh "echo $PASS | docker login -u $USER --password-stdin 20.225.64.98:8083"
-        sh 'docker push 20.225.64.98:8083/my-job:$amine-registry'
+        sh 'docker push 20.225.64.98:8083/my-job:amine-registry'
     }
 }
