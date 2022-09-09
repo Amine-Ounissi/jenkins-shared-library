@@ -7,5 +7,5 @@ def call() {
         sh 'kubectl get deployment'
         sh 'kubectl get pods'
         sh 'kubectl get svc'
-    }
+    //}
 }
